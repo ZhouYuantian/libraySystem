@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproj5003.libarysystem.controller.AddBookController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="332.0">
+         <children>
+            <HBox prefHeight="71.0" prefWidth="309.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name:" wrappingWidth="95.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfBookName" />
+               </children>
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="71.0" prefWidth="309.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="95.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfDescription" prefHeight="60.0" prefWidth="167.0" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="71.0" prefWidth="309.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author:" wrappingWidth="95.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfAuthor" />
+               </children>
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="71.0" prefWidth="309.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edition:" wrappingWidth="95.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfEdition" />
+               </children>
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="59.0" prefWidth="332.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock:" wrappingWidth="95.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfStock" />
+               </children>
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#onAddBook" text="Add Book">
+               <VBox.margin>
+                  <Insets left="120.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproj5003.libarysystem.controller.UserPageController">
+   <children>
+      <MenuBar VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="BOOKS">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onBookList" text="Book List" />
+                  <MenuItem mnemonicParsing="false" onAction="#onReturn" text="Return" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="RECORDS">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onHistory" text="History" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane fx:id="mainPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

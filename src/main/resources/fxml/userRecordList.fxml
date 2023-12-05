@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproj5003.libarysystem.controller.UserRecordListController">
+   <children>
+      <TableView fx:id="recordTable" layoutX="38.0" layoutY="66.0" prefHeight="210.0" prefWidth="373.0">
+        <columns>
+          <TableColumn fx:id="bookIdCol" prefWidth="67.0" text="BOOK ID" />
+          <TableColumn fx:id="bookNameCol" prefWidth="136.0" text="BOOK NAME" />
+            <TableColumn fx:id="dateCol" prefWidth="98.0" text="DATE" />
+            <TableColumn fx:id="actionCol" prefWidth="73.0" text="ACTION" />
+        </columns>
+      </TableView>
+      <Button layoutX="198.0" layoutY="292.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+      <Text layoutX="175.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your History:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

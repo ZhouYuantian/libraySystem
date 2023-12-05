@@ -1,0 +1,13 @@
+
+#spring
+spring:
+  datasource:
+    #???????????
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:db/libary.db
+    username:
+    password:
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #mybatis-plus????????????SQL??
