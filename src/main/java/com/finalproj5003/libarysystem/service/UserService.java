@@ -26,9 +26,9 @@ public class UserService {
         userDao.delete(new QueryWrapper<User>().eq("user_name",userName));
     }
 
-    public void updateUser(String id,User user)
+    public void updateUserById(User user)
     {
-        userDao.update(user,new QueryWrapper<User>().eq("id",id));
+        userDao.update(user,new QueryWrapper<User>().eq("id",user.getId()));
     }
 
     public boolean checkPassword(String userName,String password)

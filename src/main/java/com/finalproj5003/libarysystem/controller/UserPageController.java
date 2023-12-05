@@ -2,6 +2,7 @@ package com.finalproj5003.libarysystem.controller;
 
 import com.finalproj5003.libarysystem.utils.SpringContextUtil;
 import com.finalproj5003.libarysystem.view.BookListView;
+import com.finalproj5003.libarysystem.view.PasswordChangeView;
 import com.finalproj5003.libarysystem.view.UserRecordListView;
 import com.finalproj5003.libarysystem.view.ReturnPageView;
 import de.felixroske.jfxsupport.AbstractFxmlView;
@@ -33,6 +34,13 @@ public class UserPageController {
     @FXML
     void onHistory(ActionEvent event) {
         final AbstractFxmlView view = SpringContextUtil.getBean(UserRecordListView.class);
+        mainPane.getChildren().clear();
+        mainPane.getChildren().add(view.getView());
+    }
+
+    @FXML
+    void onChangePassword(ActionEvent event) {
+        final AbstractFxmlView view = SpringContextUtil.getBean(PasswordChangeView.class);
         mainPane.getChildren().clear();
         mainPane.getChildren().add(view.getView());
     }
