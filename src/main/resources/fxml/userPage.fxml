@@ -24,6 +24,7 @@
             <Menu mnemonicParsing="false" text="Profile">
               <items>
                   <MenuItem mnemonicParsing="false" onAction="#onChangePassword" text="Change Password" />
+                  <MenuItem mnemonicParsing="false" onAction="#onLogout" text="Logout" />
               </items>
             </Menu>
          </menus>

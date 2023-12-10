@@ -57,6 +57,14 @@ public class RecordListController implements Initializable {
         recordTable.setItems(fxRecordList);
     }
 
+    @FXML
+    void onRefresh(ActionEvent event)
+    {
+        List<Record> recordList=recordService.findAll();
+        ObservableList<Record> fxRecordList= FXCollections.observableList(recordList);
+        recordTable.setItems(fxRecordList);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         userIdCol.setCellValueFactory(new PropertyValueFactory<>("userId"));

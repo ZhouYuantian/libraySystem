@@ -27,6 +27,11 @@
                   <MenuItem mnemonicParsing="false" onAction="#onViewHistory" text="View History" />
               </items>
             </Menu>
+            <Menu mnemonicParsing="false" text="PROFILE">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onLogout" text="Logout" />
+              </items>
+            </Menu>
          </menus>
       </MenuBar>
       <AnchorPane fx:id="mainPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />

@@ -35,7 +35,7 @@
                   <TableColumn fx:id="dateCol" prefWidth="123.0" text="RENT ON" />
                </columns>
             </TableView>
-            <Button mnemonicParsing="false" onAction="#onReturn" prefHeight="29.0" prefWidth="88.0" text="Return Book">
+            <Button mnemonicParsing="false" onAction="#onReturn" text="Return Book">
                <VBox.margin>
                   <Insets left="130.0" top="20.0" />
                </VBox.margin>

@@ -21,11 +21,11 @@
             <Insets top="50.0" />
          </VBox.margin>
       </PasswordField>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+      <HBox alignment="CENTER" prefHeight="100.0" spacing="80.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#adminLogin" text="admin login" />
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#userLogin" text="user login" />
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#userRegister" text="user register" />
+            <Button alignment="CENTER" minWidth="85.0" mnemonicParsing="false" onAction="#adminLogin" text="admin login" />
+            <Button alignment="CENTER" minWidth="73.0" mnemonicParsing="false" onAction="#userLogin" text="user login" />
+            <Button alignment="CENTER" minWidth="88.0" mnemonicParsing="false" onAction="#userRegister" text="user register" />
          </children>
          <VBox.margin>
             <Insets top="50.0" />

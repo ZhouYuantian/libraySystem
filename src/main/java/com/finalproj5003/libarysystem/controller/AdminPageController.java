@@ -1,12 +1,10 @@
 package com.finalproj5003.libarysystem.controller;
 
 import com.finalproj5003.libarysystem.utils.SpringContextUtil;
-import com.finalproj5003.libarysystem.view.AddBookView;
-import com.finalproj5003.libarysystem.view.BookListView;
-import com.finalproj5003.libarysystem.view.RecordListView;
-import com.finalproj5003.libarysystem.view.UserListView;
+import com.finalproj5003.libarysystem.view.*;
 import de.felixroske.jfxsupport.AbstractFxmlView;
 import de.felixroske.jfxsupport.FXMLController;
+import de.felixroske.jfxsupport.GUIState;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -47,5 +45,12 @@ public class AdminPageController {
         final AbstractFxmlView view = SpringContextUtil.getBean(RecordListView.class);
         mainPane.getChildren().clear();
         mainPane.getChildren().add(view.getView());
+    }
+
+    @FXML
+    void onLogout(ActionEvent event) {
+        final AbstractFxmlView view = SpringContextUtil.getBean(LoginView.class);
+        GUIState.getScene().setRoot(view.getView());
+        GUIState.getStage().show();
     }
 }

@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproj5003.libarysystem.controller.RecordListController">
    <children>
-      <TableView fx:id="recordTable" layoutX="21.0" layoutY="59.0" prefHeight="283.0" prefWidth="559.0">
+      <TableView fx:id="recordTable" layoutX="21.0" layoutY="59.0" prefHeight="270.0" prefWidth="559.0">
         <columns>
           <TableColumn fx:id="userIdCol" prefWidth="47.0" text="User Id" />
           <TableColumn fx:id="userNameCol" prefWidth="103.0" text="User Name" />
@@ -21,5 +21,6 @@
       </TableView>
       <TextField fx:id="tfKeyword" layoutX="31.0" layoutY="14.0" promptText="search keyword" />
       <Button layoutX="200.0" layoutY="14.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
+      <Button layoutX="253.0" layoutY="336.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
    </children>
 </AnchorPane>
